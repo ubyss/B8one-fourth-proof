@@ -181,6 +181,8 @@
 
             }
 
+
+            &__add-to-cart__button-mobile,
             &__add-to-cart{
                 padding: 12px 24px;
                 gap: 8px;
@@ -197,6 +199,7 @@
                 margin-top: 1rem;
                 cursor: pointer;
 
+
                 @media screen and (max-width: 768px) {
                     height: 32px;
                     width: 100%;
@@ -205,6 +208,18 @@
                     letter-spacing: -0.1px;
                     padding: 8px 12px;
                 }
+            }
+
+            &__add-to-cart__button-mobile{
+                @media screen and (min-width: 768px){
+                    display: none;
+                }
+            }
+
+            &__add-to-cart{
+                @media screen and (max-width: 768px){
+                    display: none;
+                } 
             }
         }
 

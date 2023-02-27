@@ -143,7 +143,7 @@
         line-height: 28px;
         color: #000000;
 
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 1000px) {
             font-family: 'Inter';
             font-style: normal;
             font-weight: 400;
@@ -154,7 +154,7 @@
     }
 
     &__localization{
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 1000px) {
             margin-top: .75rem;
         }
     }

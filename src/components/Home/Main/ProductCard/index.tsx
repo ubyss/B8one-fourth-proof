@@ -82,6 +82,9 @@ const ProductCard: React.FC<{ product: IProducts }> = ({ product }) => {
       <button className="product-card__card-container__add-to-cart">
         Adicionar ao carrinho
       </button>
+      <button className="product-card__card-container__add-to-cart__button-mobile">
+        Adicionar
+      </button>
     </div>
   );
 };
