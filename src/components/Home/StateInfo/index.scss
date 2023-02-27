@@ -1,0 +1,115 @@
+.state-info{
+    background: #FFFFFF;
+    display: flex;
+    padding: 16px 32px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    align-items: center;
+
+    &__mobile{
+
+        &__dropdown{
+            margin: 1.25rem 0;
+        }
+
+        @media screen and (max-width: 768px) {
+            padding: 16px;
+            margin-top: 72px;
+
+            &__name{
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 20px;
+                margin-bottom: .75rem;
+            }
+        }
+
+        
+        @media screen and (min-width: 768px) {
+            display: none;
+        }
+    }
+    
+    &__left{
+        flex-grow: 1;
+        &__top{
+            display: flex;
+            align-items: center;
+
+            &__name{
+                font-weight: 700;
+            }
+            
+            svg{
+                margin: 0 1rem;
+            }
+
+            &__location{
+                display: flex;
+                flex-direction: row;
+                gap: 1rem;
+            }
+        }
+
+        &__bottom{
+            display: flex;
+            gap: 1rem;
+
+            &__hour{
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+            }
+
+            &__phone{
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+            }
+        }
+
+    }
+
+
+    &__button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 12px 16px;
+        gap: 16px;
+        background: #FFFFFF;
+        border: 1px solid #9CA0AE;
+        border-radius: 8px;
+        height: 48px;
+        width: min(100%, 216px);
+        cursor: pointer;
+        transition: all ease-in-out .5s;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        color: #000000;
+
+        @media screen and (max-width: 768px) {
+            width: 100%;
+        }
+
+        &:hover{
+            background: #E6E7EB;
+            border-radius: 8px;
+            border: 1px solid transparent;
+
+        }
+    }
+
+    @media screen and (max-width: 1096px) {
+        flex-direction: column;
+        display: none;
+    }
+}

@@ -54,7 +54,7 @@
         }
 
         &__product-name{
-            font-family: 'Inter';
+            font-family: "Inter";
             font-style: normal;
             font-weight: 600;
             font-size: 14px;
@@ -62,6 +62,12 @@
             color: #000000;
             margin-top: 1.5rem;
             margin-bottom: 1rem;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            max-width: 267px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
 
             @media screen and (max-width: 768px) {
                 margin-top: .75rem;
