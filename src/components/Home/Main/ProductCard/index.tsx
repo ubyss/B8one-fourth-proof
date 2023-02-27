@@ -8,9 +8,9 @@ const ProductCard: React.FC<{ product: IProducts }> = ({ product }) => {
       <img className="product-card__img" src={image}></img>
       <h4 className="product-card__product-name">{name}</h4>
 
-      <span className="product-card__old-price">{listPrice}</span>
+      <span className="product-card__old-price">{Number(listPrice).toLocaleString('pt-br', {minimumFractionDigits: 2})}</span>
       <div className="product-card__price-container">
-        <h3 className="product-card__disconted-price">{price}</h3>
+        <h3 className="product-card__disconted-price">{Number(price).toLocaleString('pt-br', {minimumFractionDigits: 2})}</h3>
         <div className="product-card__disconted-container">
           <div className="product-card__discount-icon">
             <svg
@@ -37,6 +37,7 @@ const ProductCard: React.FC<{ product: IProducts }> = ({ product }) => {
               />
             </svg>
           </div>
+          <span>{Math.floor((Number(listPrice) - Number(price) ) / Number(listPrice) * 100)}%</span>
         </div>
       </div>
       <span className="product-card__discount-text">
@@ -69,7 +70,7 @@ const ProductCard: React.FC<{ product: IProducts }> = ({ product }) => {
         </div>
         <span className="product-card__card-container__card-text">
           <span className="product-card__card-container__card-text__price">
-            R$ {price}{" "}
+            R$ {price}
           </span>
           <div className="product-card__card-container__card-text__bottom">
             <span>em até</span>

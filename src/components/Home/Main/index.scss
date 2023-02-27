@@ -98,6 +98,34 @@
             }
         }
 
+        &__disconted-container{
+            padding: 2px 6px;
+            gap: 4px;
+            height: 20px;
+            background: #D82948;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 16px;
+            letter-spacing: -0.1px;
+            color: #FFFFFF;
+            vertical-align: middle;
+        }
+
+        &__discount-icon{
+         padding-top: 3px;
+        }
+
+        &__price-container{
+            display: flex;
+            gap: 8px;
+            align-items: center;
+        }
+
         &__disconted-price{
             font-family: 'Inter';
             font-style: normal;
