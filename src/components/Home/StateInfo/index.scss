@@ -11,6 +11,11 @@
 
     &__mobile{
 
+        &__header{
+            display: flex;
+            justify-content: space-between;
+        }
+
         &__dropdown{
             margin: 1.25rem 0;
         }

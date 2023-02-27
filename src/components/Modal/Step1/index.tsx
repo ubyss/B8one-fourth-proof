@@ -5,13 +5,13 @@ import { UserContext } from '../../Contexts/UserContext'
 
 const ModalStepOne: React.FC<{setModalStep: Function}> = ({setModalStep}) => {
 
-    const {clickedState} = useContext(UserContext)
+    const {getInfo} = useContext(UserContext)
 
     function selectState(e: MouseEvent){
         const target = e.target as HTMLElement
         const state = target.getAttribute('data-state')
-
-        clickedState({variables: {
+        
+        getInfo({variables: {
             input: {
                 email: 'teste@hotmail.com',
                 state

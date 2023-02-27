@@ -6,9 +6,10 @@ const ModalStepTwo: React.FC<{ setModalStep: Function }> = ({
 }) => {
   const context = useContext(UserContext);
 
-  if (!context?.storeRegionalization) return (<img src="./../../../assets/skeleton.gif"></img>);
+  if (!context?.storeInfo) return (<></>);
 
-  const { storeRegionalization } = context;
+  const { clickedState } = context;
+  const { storeRegionalization } = context?.storeInfo;
 
   const {
     name,
@@ -23,6 +24,15 @@ const ModalStepTwo: React.FC<{ setModalStep: Function }> = ({
   } = storeRegionalization;
 
   const confirmedState = () => {
+
+    const email = window.localStorage.getItem('email')
+
+    clickedState({variables: {
+      input: {
+          email,
+          state
+      }
+  }})
 
     window.localStorage.setItem('state', state)
 

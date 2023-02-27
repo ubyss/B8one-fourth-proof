@@ -22,9 +22,9 @@ const ProductCard: React.FC<{ product: IProducts }> = ({ product }) => {
               <path
                 d="M4 5L6 7L8 5"
                 stroke="white"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               />
               <rect
                 x="0.75"
@@ -33,7 +33,7 @@ const ProductCard: React.FC<{ product: IProducts }> = ({ product }) => {
                 height="10.5"
                 rx="5.25"
                 stroke="white"
-                stroke-width="1.5"
+                strokeWidth="1.5"
               />
             </svg>
           </div>
@@ -54,16 +54,16 @@ const ProductCard: React.FC<{ product: IProducts }> = ({ product }) => {
             <path
               d="M17.1591 3.75H2.84091C1.96227 3.75 1.25 4.44956 1.25 5.3125V14.6875C1.25 15.5504 1.96227 16.25 2.84091 16.25H17.1591C18.0377 16.25 18.75 15.5504 18.75 14.6875V5.3125C18.75 4.44956 18.0377 3.75 17.1591 3.75Z"
               stroke="black"
-              stroke-width="1.5"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeWidth="1.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             />
             <path
               d="M1.25 8.4375H18.75"
               stroke="black"
-              stroke-width="1.5"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeWidth="1.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             />
           </svg>
         </div>

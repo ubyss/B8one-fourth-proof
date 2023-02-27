@@ -4,8 +4,9 @@ export interface IContext {
     modalStep: Number,
     setModalStep: Function
     clickedState: Function
+    getInfo: Function
     storeRegionalization: StoreRegionalization | null,
-    loading: boolean
+    storeInfo: StoreInfo | null,
   }
 
 export type IUserContext = {
@@ -23,4 +24,8 @@ export type StoreRegionalization = {
   celphone: string
   phone: string
   products : IProducts
+}
+
+export type StoreInfo = {
+  storeRegionalization: StoreRegionalization
 }

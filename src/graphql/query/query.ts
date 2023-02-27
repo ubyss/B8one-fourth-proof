@@ -23,3 +23,19 @@ export const OBTER_PRODUTOS = gql`
     }
   }
 `;
+
+export const OBTER_INFO = gql`
+  query getData($input: SendRegionalizationInput!) {
+    storeRegionalization(input: $input) {
+      name
+      address
+      neighborhood
+      city
+      state
+      postalCode
+      hour
+      celphone
+      phone
+    }
+  }
+`;

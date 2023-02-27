@@ -1,8 +1,8 @@
 .modal-overlay{
     position: absolute;
     background: #4c4c4d36;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     z-index: 2;
     top: 0;
     left: 0;
@@ -12,7 +12,6 @@
 .modal-container{
     width: 656px;
     height: 664px;
-
     background: #FFFFFF;
     border-radius: 16px;
     position: absolute;
@@ -154,6 +153,12 @@
         }
     }
 
+    &__localization{
+        @media screen and (max-width: 768px) {
+            margin-top: .75rem;
+        }
+    }
+
     &__localization-icon,
     &__hour-icon,
     &__phone-icon{
@@ -173,8 +178,6 @@
 
     &__phone-info{
         @media screen and (max-width: 768px) {
-            flex-direction: row;
-            gap: .75rem;
         }
     }
 
@@ -184,7 +187,7 @@
         margin-top: 56px;
 
         @media screen and (max-width: 768px) {
-            margin-top: 0;
+            margin-top: 37%;
             flex-direction: column;
             gap: .5rem;
 
