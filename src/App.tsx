@@ -1,12 +1,19 @@
-import Home from "./pages/Home"
+import {
+  RouterProvider,
+} from "react-router-dom";
+import router from "./routes";
+import Modal from "./components/Modal";
+import UserContextProvider from "./components/Contexts/UserContext";
+
 
 function App() {
 
   return (
-    <div className="App">
-      <Home />
-    </div>
+    <UserContextProvider>
+      <RouterProvider router={router} />
+      <Modal />
+    </UserContextProvider>
   )
 }
 
-export default App
+export default App;

@@ -1,0 +1,230 @@
+.main{
+    padding: 0 96px 41px;
+    margin-top: 1.25rem;
+
+    &__state-selection{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 36px;
+        color: #000000;
+        margin: 2rem 0;
+
+        @media screen and (max-width: 768px) {
+            font-size: 24px;
+            line-height: 32px;
+            padding: 0 16px;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        padding: 0;
+        padding-bottom: 1.5625rem;
+    }
+}
+
+.products{
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+
+    .product-card{
+        padding: 1.5rem;
+        background: #FFFFFF;
+        border-radius: 16px;
+        border: 2px solid transparent;
+        max-width: 294px;
+        transition: all ease-in-out .5s;
+
+        &:hover{
+            border: 2px solid #000000;
+            transition: all .5s ease-in-out;
+        }
+    
+        &__img{
+            width: 100%;
+            height: 278px;
+            object-fit: scale-down;
+
+            @media screen and (max-width: 768px) {
+                width: 136px;
+                height: 136px;
+            }
+        }
+
+        &__product-name{
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 20px;
+            color: #000000;
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+
+            @media screen and (max-width: 768px) {
+                margin-top: .75rem;
+                margin-bottom: .75rem;
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 16px;
+                letter-spacing: -0.1px;
+            }
+        }
+
+        &__old-price{
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 16px;
+            letter-spacing: -0.1px;
+            text-decoration-line: line-through;
+            color: rgba(0, 0, 0, 0.6);
+
+            @media screen and (max-width: 768px) {
+                font-weight: 600;
+                font-size: 12px;
+                line-height: 16px;
+                letter-spacing: -0.1px;
+                text-decoration-line: line-through;
+            }
+        }
+
+        &__disconted-price{
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 28px;
+            color: #000000;
+
+            @media screen and (max-width: 768px) {
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 24px;
+            }
+        }
+
+        &__discount-text{
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 16px;
+            letter-spacing: -0.1px;
+            color: rgba(0, 0, 0, 0.6);
+
+            @media screen and (max-width: 768px) {
+                font-weight: 500;
+                font-size: 11px;
+                line-height: 16px;
+                letter-spacing: -0.1px;
+            }
+        }
+
+        &__card-container{
+            display: flex;
+            align-items: center;
+            margin-top: .625rem;
+            gap: .5rem;
+
+            &__card-icon{
+                padding-top: .25rem;
+
+                @media screen and (max-width: 768px) {
+                    display: none;
+                }
+            }
+
+
+
+            &__card-text{
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 12px;
+                line-height: 16px;
+                letter-spacing: -0.1px;
+                color: rgba(0, 0, 0, 0.6);
+                display: flex;
+                gap: 0.2rem;
+
+                @media screen and (max-width: 768px) {
+                    display: flex;
+                    flex-direction: column;
+                    font-weight: 600;
+                    font-size: 12px;
+                    line-height: 16px;
+                    letter-spacing: -0.1px;
+                    white-space: nowrap;
+                }
+            }
+
+            &__card-text {
+                &__price{
+                    color: #000000;
+                }
+
+                &__bottom{
+                    span:nth-child(even){
+                        color: #000000;
+                    }
+                }
+
+            }
+
+            &__add-to-cart{
+                padding: 12px 24px;
+                gap: 8px;
+                width: 246px;
+                height: 48px;
+                background: #042CA6;
+                border-radius: 8px;
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 24px;
+                color: #FFFFFF;
+                margin-top: 1rem;
+                cursor: pointer;
+
+                @media screen and (max-width: 768px) {
+                    height: 32px;
+                    width: 100%;
+                    font-size: 12px;
+                    line-height: 16px;
+                    letter-spacing: -0.1px;
+                    padding: 8px 12px;
+                }
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            width: 100%;
+            height: 332px;
+            gap: 8px;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 16px;
+            letter-spacing: -0.1px;
+            color: #000000;
+            padding: 1rem;
+            height: 100%;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        gap: 8px;
+        justify-content: center;
+        padding: 0 1rem;
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+    }
+}
+
+
